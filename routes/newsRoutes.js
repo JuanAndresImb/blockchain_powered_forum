@@ -4,11 +4,13 @@ const newsController = require('../controllers/newsController');
 
 //Posting a news
 
-router.post('/publish', newsController); 
-router.post('./login', authController.login);
+router.post('/publish', newsController.publish); 
 
-//Route that connect wallet using web3.js
+// Showing all the news
+router.get('/all', newsController.getAllNews);
 
-router.post('./connectWallet', authController.connectWallet);
+//Showing news by id 
+
+router.get('/:id', newsController.getNewsById);
 
 module.exports = router;
