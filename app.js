@@ -28,6 +28,15 @@ const verificationRoutes = require('./routes/verificationRoutes');
 app.use('./auth', authRoutees);
 app.use('./news', newRoutes);
 app.use('./verification', verificationRoutes);
+const sequelize = require('./config/database');
+
+//sync models with db
+sequelize.sync().then(() => {
+    console.log("Database well synchronized");
+}).catch(err => {
+    console.error("Error on database synchronisation", err);
+});
+
 
 //Server Port
 
