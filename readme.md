@@ -1,4 +1,4 @@
-🏗️# GTA6 News Hub - Blockchain Powered Forum
+🏗️ # GTA6 News Hub - Blockchain Powered Forum
 
 ## Description
 
