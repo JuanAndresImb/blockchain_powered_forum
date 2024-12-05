@@ -7,7 +7,7 @@ import LoginPage from './pages/loginPage.jsx'
 import NewsPage from './pages/NewsPage.jsx'
 import Navbar from './components/navBar.jsx'
 import Footer from './components/footer.jsx'
-import FollowMouse from './components/followMouse.jsx'
+import Follow from './components/followMouse.jsx'
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
     <Router>
       <Navbar />
       <Footer />
-      <FollowMouse />
+      <Follow />
       <main>
         <Routes>
           <Route path='/' element={<HomePage />} />
