@@ -21,6 +21,7 @@ useEffect(() => {
     }
 
     return () => {
+        console.log('cleanUp')
         window.removeEventListener('pointermove', handleMove)
     }
 }, [enabled])
