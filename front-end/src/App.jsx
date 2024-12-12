@@ -16,7 +16,8 @@ const App = () => {
       <Navbar />
       <Footer />
       <Follow />
-      <main>
+        <main>
+          
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/LoginPage.jsx' element={<LoginPage />} />
@@ -25,5 +26,21 @@ const App = () => {
       </main>
     </Router>
   )
+  
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
 }
+
 export default App
