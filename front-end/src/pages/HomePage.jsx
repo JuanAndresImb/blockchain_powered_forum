@@ -19,11 +19,14 @@ export function HomePage() {
   }, [])
 
   return (
-    <main>
-      <h1>Bienvenido a GTA 6 Home</h1>
-
-      {/* Renderizamos la lista de juegos */}
-      {games.length > 0 ? (
+    
+     
+    <body>
+      
+    
+      <aside>
+        <section>
+{games.length > 0 ? (
         <ul>
           {games.map((game) => (
             <li key={game.id}>
@@ -31,11 +34,11 @@ export function HomePage() {
               <p>Slug: {game.slug}</p>
               <p>Lanzamiento: {game.released}</p>
               <p>Reputacion : {game.rating_top}</p>
-              <section id='image'>
+              <article>
                 {game.background_image && (
                 <img src={game.background_image} alt={game.name}  />
               )}
-              </section>
+              </article>
               
             </li>
           ))}
@@ -43,7 +46,11 @@ export function HomePage() {
       ) : (
         <p>Cargando juegos...</p>
       )}
-    </main>
+        </section>
+        
+      </aside>
+      
+    </body>
   );
 }
 
